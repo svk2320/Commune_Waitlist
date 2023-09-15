@@ -29,7 +29,7 @@
     <style>
       body {
         margin: 0px;
-        font-family: "Nunito Sans", sans-serif;
+        font-family: "Nunito Sans", monospace;
       }
 
       link[rel="icon"] {
@@ -43,8 +43,18 @@
         color: white;
       }
 
+      .custom-text-bg {
+        background-color: #3d2e69;
+        color: white;
+        width: fit-content;
+      }
+
       .nav-item .header-font-color {
         color: #717175;
+      }
+
+      input[type="email" i] {
+            padding: 10px 2px;
       }
     </style>
   </head>
@@ -82,38 +92,52 @@
         </button>
       </header>
 
-      <div>
-        <div>We are now allowing early-access for users. Learn more.</div>
-        <div>Build a highly engaged communit with no effort.</div>
-        <div>
-          Commune offers the tools you need to build a highly engaged community
-          with little to no effort. Simply setup your Commune workspace, and
-          manage everything from members to content from one central dashboard.
-        </div>
-        <div>
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter your e-mail address"
-          />
-          <button>Join Waitlist</button>
-        </div>
-        <div>
-          <img src="Assets/Illustration.png" alt="Logo" />
-        </div>
-        <div>
-            Used by these companies:
-            <div>
-                <img src="Assets/Atlassian Icon.svg" alt="Logo" />
-                <img src="Assets/Behance Icon.svg" alt="Logo" />
-                <img src="Assets/Bing Icon.svg" alt="Logo" />
-                <img src="Assets/Bitbucket Icon.svg" alt="Logo" />
-                <img src="Assets/Dropbox Icon.svg" alt="Logo" />
-                <img src="Assets/Twitch Icon.svg" alt="Logo" />
-                <img src="Assets/Twitter Icon.svg" alt="Logo" />
+      <section class="pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="custom-text-bg rounded-pill px-3 py-1">
+                We are now allowing early-access for users. Learn more
+              </div>
+              <h1 style="font-weight: 600; color: #3d2e69; font-size: 60px;" class="pt-4">
+                Build a highly engaged community with no effort.
+              </h1>
+              <div style="color: #717175;;">
+                Commune offers the tools you need to build a highly engaged
+                community with little to no effort. Simply setup your Commune
+                workspace, and manage everything from members to content from
+                one central dashboard.
+              </div>
+              <div class="pt-4">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your e-mail address"
+                  style="height: 40px; width: 250px;"
+                />
+                <button style="background-color: #3d2e69; color: #fff;" class="btn">Join Waitlist</button>
+              </div>
             </div>
+
+            <div class="col-lg-5 d-flex justify-content-end d-lg-block d-none">
+              <img src="Assets/Illustration.png" alt="Logo" width="500" height="600" />
+            </div>
+          </div>
         </div>
-      </div>
+
+        <div class="pt-4">
+          Used by these companies:
+          <div>
+            <img src="Assets/Atlassian Icon.svg" alt="Logo" />
+            <img src="Assets/Behance Icon.svg" alt="Logo" />
+            <img src="Assets/Bing Icon.svg" alt="Logo" />
+            <img src="Assets/Bitbucket Icon.svg" alt="Logo" />
+            <img src="Assets/Dropbox Icon.svg" alt="Logo" />
+            <img src="Assets/Twitch Icon.svg" alt="Logo" />
+            <img src="Assets/Twitter Icon.svg" alt="Logo" />
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- Bootstrap Bundle with Popper -->
