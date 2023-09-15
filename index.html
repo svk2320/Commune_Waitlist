@@ -9,12 +9,9 @@
     <link rel="icon" href="Assets/favicon.ico" type="image/x-icon" />
 
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link
@@ -29,18 +26,17 @@
     <style>
       body {
         margin: 0px;
-        font-family: "Nunito Sans", monospace;
-      }
-
-      link[rel="icon"] {
-        border: 2px solid #3d2e69; /* Change the color as needed */
-        border-radius: 50%;
-        padding: 4px; /* Adjust the padding as needed */
+        font-family: 'Nunito', sans-serif;
+        background-color: #f6f9fe;
       }
 
       .nav-item .custom-bg {
         background-color: #3d2e69;
         color: white;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .custom-text-bg {
@@ -53,8 +49,8 @@
         color: #717175;
       }
 
-      input[type="email" i] {
-            padding: 10px 2px;
+      input[type="email"] {
+            width: 500px;
       }
     </style>
   </head>
@@ -67,7 +63,7 @@
           <img src="Assets/Logo.svg" alt="Logo" />
         </a>
 
-        <ul class="nav nav-pills d-lg-flex d-lg-block d-none">
+        <ul class="nav nav-pills d-lg-flex d-lg-block d-none align-items-center">
           <li class="nav-item">
             <a href="#" class="nav-link header-font-color" aria-current="page"
               >Features</a
@@ -108,20 +104,21 @@
                 workspace, and manage everything from members to content from
                 one central dashboard.
               </div>
-              <div class="pt-4">
+              <div class="pt-4 d-flex justify-content-start">
                 <input
                   type="email"
                   name="email"
                   placeholder="Enter your e-mail address"
-                  style="height: 40px; width: 250px;"
+                  style="width: 350px; height: 50px; padding: 20px; border-radius: 5px; font-weight: 100; border-color: rgb(185, 185, 185);"
                 />
-                <button style="background-color: #3d2e69; color: #fff;" class="btn">Join Waitlist</button>
+                <button style="background-color: #3d2e69; height: 50px; color: #fff;" class="btn ms-2">Join Waitlist</button>
               </div>
             </div>
 
-            <div class="col-lg-5 d-flex justify-content-end d-lg-block d-none">
-              <img src="Assets/Illustration.png" alt="Logo" width="500" height="600" />
+            <div class="col-lg-5 d-flex justify-content-end">
+                <img src="Assets/Illustration.png" alt="Logo" width="400" height="500" class="img-fluid d-lg-block d-none" />
             </div>
+            
           </div>
         </div>
 
