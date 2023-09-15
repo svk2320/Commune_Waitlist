@@ -1,64 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- favicon element -->
-    <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Assets/favicon.ico" type="image/x-icon" />
 
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
     <title>Commune Waitlist</title>
 
     <style>
-        body {
-            margin: 0px;
-            font-family: 'Nunito Sans', sans-serif;
-        }
+      body {
+        margin: 0px;
+        font-family: "Nunito Sans", sans-serif;
+      }
 
-        link[rel="icon"] {
-            border: 2px solid #3d2e69; /* Change the color as needed */
-            border-radius: 50%;
-            padding: 4px; /* Adjust the padding as needed */
-        }
+      link[rel="icon"] {
+        border: 2px solid #3d2e69; /* Change the color as needed */
+        border-radius: 50%;
+        padding: 4px; /* Adjust the padding as needed */
+      }
 
-        .nav-item  .custom-bg {
-            background-color: #3d2e69;
-            color: white;
-        }
+      .nav-item .custom-bg {
+        background-color: #3d2e69;
+        color: white;
+      }
 
-        .nav-item .header-font-color {
-            color: #717175;
-        }
+      .nav-item .header-font-color {
+        color: #717175;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
-          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <img src = "Assets/Logo.svg" alt="Logo"/>
-          </a>
-    
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link header-font-color" aria-current="page">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link header-font-color">Affiliates</a></li>
-            <li class="nav-item"><a href="#" class="nav-link header-font-color">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link header-font-color">Communities</a></li>
-            <li class="nav-item"><a href="#" class="nav-link custom-bg">Join Waitlist</a></li>
-          </ul>
-        </header>
+      <header
+        class="d-flex flex-wrap justify-content-between py-3 mb-4 align-items-center"
+      >
+        <a href="/" class="text-decoration-none">
+          <img src="Assets/Logo.svg" alt="Logo" />
+        </a>
+
+        <ul class="nav nav-pills d-lg-flex d-lg-block d-none">
+          <li class="nav-item">
+            <a href="#" class="nav-link header-font-color" aria-current="page"
+              >Features</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link header-font-color">Affiliates</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link header-font-color">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link header-font-color">Communities</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link custom-bg">Join Waitlist</a>
+          </li>
+        </ul>
+
+        <button type="button" id="sidebarCollapse" class="btn d-lg-none">
+          <img src="Assets/Hamburger Menu.svg" alt="Hamburger-Menu" />
+        </button>
+      </header>
+
+      <div>
+        <div>We are now allowing early-access for users. Learn more.</div>
+        <div>Build a highly engaged communit with no effort.</div>
+        <div>
+          Commune offers the tools you need to build a highly engaged community
+          with little to no effort. Simply setup your Commune workspace, and
+          manage everything from members to content from one central dashboard.
+        </div>
+        <div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your e-mail address"
+          />
+          <button>Join Waitlist</button>
+        </div>
+        <div>
+          <img src="Assets/Illustration.png" alt="Logo" />
+        </div>
+        <div>
+            Used by these companies:
+            <div>
+                <img src="Assets/Atlassian Icon.svg" alt="Logo" />
+                <img src="Assets/Behance Icon.svg" alt="Logo" />
+                <img src="Assets/Bing Icon.svg" alt="Logo" />
+                <img src="Assets/Bitbucket Icon.svg" alt="Logo" />
+                <img src="Assets/Dropbox Icon.svg" alt="Logo" />
+                <img src="Assets/Twitch Icon.svg" alt="Logo" />
+                <img src="Assets/Twitter Icon.svg" alt="Logo" />
+            </div>
+        </div>
       </div>
+    </div>
 
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
